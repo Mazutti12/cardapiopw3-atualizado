@@ -1,0 +1,73 @@
+
+h1{ 
+  margin-left: 29%;
+   font-family: "Lucida Console", "Monaco", monospace
+  }
+
+body {
+  background-color: rgb(84, 174, 96);
+}
+
+.fundo {
+  background-color: rgb(250, 252, 250); 
+  margin-top: 0px;
+  margin-left: -1%; 
+  width: 110%;
+}
+
+.w3-container{
+  margin-top: 50px; 
+  background-color: 
+  rgb(255, 255, 255); 
+  width: 1150px; 
+  height: 180%; 
+  border-radius: 5px; 
+  margin-left: 18%;
+}
+
+div {
+  margin-top: 0px; 
+  margin-left: 0%; 
+  width: 60%;
+}
+
+.input-group {
+  margin-left: 17%;
+}
+
+.form-floating {
+  margin-top: 50px; 
+  margin-left: 17%; 
+  width: 60%;
+}
+
+.tb {
+  margin-top: 50px; 
+  margin-left: 17%;
+}
+
+
+  .table {
+    background-color: rgb(255, 250, 235);
+    border-radius: 5px;
+  }
+  .ingredientes {
+    background-color: rgb(248, 202, 200);
+    border-radius: 5px;
+  }
+
+.form-select {
+  width: 5%;
+  margin-right: 20px;
+  display: table-cell;
+    float: left;
+}
+
+.buttons{
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+.calend{
+  margin-right: 20px;
+}
