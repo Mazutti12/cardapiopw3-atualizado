@@ -38,7 +38,7 @@ if (!isset($_SESSION["username"])) {
       </select>
       <div class="buttons">
         <input type="submit" class="btn btn-dark" value = "Buscar"></button>
-        <button type="button" class="btn btn-danger">Limpar filtros</button>
+        <button type="reset" class="btn btn-danger">Limpar filtros</button>
       </div>
     </div>
 </form>

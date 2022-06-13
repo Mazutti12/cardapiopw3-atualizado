@@ -33,29 +33,31 @@ VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
     }else{
 ?>
   <body>
-      <div class = "fundo">
-  <div class="w3-container">
-  <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
-    <form>
-        <br>
-        <h2>Registro de nutricionista</h2>
-    <div class="form-group">
-    <label for="exampleInputEmail1">Us  uário</label>
-    <input type="text" class="form-control" id="nome" placeholder="Usuário">
-    <br>
-    <!-- <label for="exampleInputPassword1">Email</label>
-    <input type="email" class="form-control" id="senha" placeholder="Senha">
-    <br> -->
-    <label for="exampleInputPassword1">Senha</label>
-    <input type="password" class="form-control" id="senha" placeholder="Senha">
-    <br>
-    <button type="submit" class="btn btn-primary">Acessar cardápio</button>
-  <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/cardapiopw3/frontend/login/login-vitinho/index.php'">Voltar</button>
-  <br><br>
-  </div>
-</form> 
-</div>
-</div>
+  <div class="col-sm-5 container pt-5">
+        <img src="img/logo.png" class="mx-auto d-block ">
+       
+        <form action="index.php" method="POST"  >
+          <h2>Registro da Nutricionista</h2>
+        <div class="mb-3 mt-3" >
+                <label for="user">Usuário</label>
+                <input type="text" class="form-control" id="use" placeholder="Uusário" name="email" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Inválido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Entre com sua senha" name="senha" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Inválido.</div>
+            </div>
+            
+            <div class="botao">
+                <button type="submit" class="btn btn-success">Entrar</button>
+            </div>
+
+        </form>
+    </div>
+
 <?php } ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -48,22 +48,3 @@ create table refeicao_ingredientes(
 
 ALTER TABLE refeicao ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_ingredientes) REFERENCES ingredientes (id);
 
-SELECT
-    cardapio.dia,
-    cardapio.tipo,
-    refeicao.descricao
-FROM
-    cardapio C
-INNER JOIN
-	cardapio_refeicao
-ON cardapio.id = refeicao.id_refeicao;
-
-SELECT
-    ingredientes.nome,
-    ingredientes.calorias,
-    refeicao.descricao
-FROM
-    ingredientes I
-INNER JOIN
-
-ON ingredientes.id_ingredientes = refeicao.id_refeicao

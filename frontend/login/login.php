@@ -32,15 +32,30 @@ and password='".md5($password)."'";
 	}
     }else{
 ?>
-<div class="form">
-<h1>Log In</h1>
-<form action="" method="post" name="login">
-<input type="text" name="username" placeholder="Username" required />
-<input type="password" name="password" placeholder="Password" required />
-<br>
-<input name="submit" type="submit" value="Login" />
-</form>
-</div>
+  <div class="col-sm-5 container pt-5">
+        <img src="img/logo.png" class="mx-auto d-block ">
+       
+        <form action="index.php" method="POST"  >
+            <div class="mb-3 mt-3" >
+                <label for="user">Usuário</label>
+                <input type="text" class="form-control" id="use" placeholder="Uusário" name="email" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Inválido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Inválido.</div>
+            </div>
+            
+            <div class="botao">
+                <button type="submit" class="btn btn-danger">Entrar</button>
+            </div>
+
+        </form>
+    </div>
+
 <?php } ?>
 </body>
 </html>

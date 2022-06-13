@@ -1,0 +1,23 @@
+img{
+    width:240px;
+    height: 130px;
+}
+form{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 15px;
+    color:#000000;
+   
+}
+button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+body{
+    background-color: rgb(84, 174, 96);
+    font-family: "Lucida Console", "Monaco", monospace
+}
