@@ -8,13 +8,6 @@
     <link type="text/css" href="style/styleindex.css" rel="stylesheet"/>
     <title>Cardápio RU</title>
   </head>
-  <?php
-session_start();
-if (!isset($_SESSION["username"])) {
-  header("Location: login.php");
-  exit();
-}
-?>
   <body>
   <div class = "fundo">
   <div class="w3-container">

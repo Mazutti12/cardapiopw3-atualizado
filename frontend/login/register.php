@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 
@@ -23,7 +23,7 @@
 <label>Password</label>
 <input type="password" name="password" required />
 </div>
-<button type="submit" name="register" value="register">Register</button>
+<button type="submit" href="../cadnutri.php" name="register" value="register">Register</button>
 </form>
 </body>
 </html>

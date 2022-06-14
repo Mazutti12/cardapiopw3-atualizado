@@ -37,14 +37,7 @@ email varchar(100) not null,
 senha varchar(100) not null
 );
 
-create table cardapio_refeicao(
-    id_cardapio int not null primary key,
-    id_refeicao int not null 
-)
-create table refeicao_ingredientes(
-    id_refeicao int not null primary key,
-    id_ingredientes int not null
-)
+
 
 ALTER TABLE refeicao ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_ingredientes) REFERENCES ingredientes (id);
 

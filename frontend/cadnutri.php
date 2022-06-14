@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -9,7 +10,13 @@
   <link type="text/css" href="style/styleindex.css" rel="stylesheet" />
   <title>Cardápio RU</title>
 </head>
-
+<?php
+// session_start();
+// if (!isset($_SESSION["username"])) {
+//   header("Location: ./login/login.php");
+//   exit();
+// }
+?>
 <body>
   <header class="container-fluid p-3 bg-success text-white">
     <div class="header">
@@ -24,7 +31,7 @@
           <li><a href="cadnutri.php" class=" col-sm nav-link px-2 text-white "><img src="img/logo.png" alt="Logo IFRS" width="200" height="70"></a></li>
           <li><input type="search" class="form-control form-control-white" placeholder="Buscar..." aria-label="Search"></li>
           <li><input type="submit" class="btn btn-white text-white" value="Buscar"></button></li>
-          <li><a href="login.php" class="col-sm nav-link px-2 text-white ">Login</a></li>
+          <li><a  href="./login/logout.php " class="col-sm nav-link px-2 text-white ">Logout</a></li>
         </ul>
       </div>
 
@@ -87,7 +94,7 @@
           </thead>
           <tbody></tbody>
         </table>
-        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/login/login-vitinho/login.php'">Sou nutricionista deste cardápio</button>
+        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/login/login.php'">Sou nutricionista deste cardápio</button>
         <!-- Tem que saber que esta logado -->
         <button hidden type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/cadnutri.php'">Sou nutricionista deste cardápio</button>
         <br><br>

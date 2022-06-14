@@ -9,23 +9,23 @@ class Cardapio
 }
 
 
-class Refeicao 
+class Refeicoes
 {
     private $idRefeicao;
-    private $descricao;
+    private $nome;
     // nao sei como armazena isso(dado abaixo) no banco de dados
     private $ingrdientesRefeicao = [];
     // chave = ingrediente 
     //key = caloria 
-    function __construct($nome,$ingredeintes)
+    function __construct($nome,$ingredientes)
     {      
         $this->descricao = $nome;
-        $this->ingrdientesRefeicao = $ingredeintes;         
+        $this->ingredientesRefeicao = $ingredientes;         
     }
 
     function getIngrediente()
     {
-        return $this->ingrdientesRefeicao;
+        return $this->ingredientesRefeicao;
     }
 
 
