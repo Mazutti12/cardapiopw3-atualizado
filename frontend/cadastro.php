@@ -13,9 +13,9 @@ include_once("conexao.php");
 
 <body>
 	<span id="msgalert"></span>
-	<form method="POST" id="form-ingre" action="processa_cad_refeicao.php">
+	
 		<div class="container mt-3">
-			<form action="index.php" method="POST">
+		<form method="POST" id="form-ingre" action="processa_cad_refeicao.php">
 
 				<div class="logo">
 					<img src="../frontend/img/logo.png" class="flot-start" alt="IFRS">
@@ -49,6 +49,10 @@ include_once("conexao.php");
 					?>
 				</select></div>
 				<button class="btn btn-primary" type="button" onClick="add()">+</button>
+					</select>
+				</div>
+
+				<button type="button" class="btn btn-success" onClick="add()">+</button>
 				<ul id="ingredientes"></ul>
 			
 			<input type="button" class="btn btn-primary" onClick="salvar()" value="Cadastrar">
